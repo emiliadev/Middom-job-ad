@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <title>UI Developer Trainee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="middom_developer.css" rel="stylesheet">
+    <link rel="icon" href="middom_developer.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="body2">
+    <div class="layout">
+        <div class="headline">
+            <img src="middom.png" alt="Middom logo" class="logo1">
+            <h1 class="main-font-b">UI Developer Trainee</h1>
+            <h3 class="mini">Middom, Helsinki</h3>
+            <div class="main-font info">Työpaikkahakemus</div>
+            <p class="main-font">
+                Täytä tietosi ja kirjoita hakemuskirje. Halutessasi voit liittää mukaan myös CV:n sekä esimerkiksi
+                LinkedIn, GitHub tai sähköisen portfolion linkin.
+            </p>
+            <form name="uitrainee" class="font" method="POST" autocomplete="on">
+                Etunimi: <br \>
+                <input type="text" name="fname" required autofocus class="field">
+                Sukunimi: <br \>
+                <input type="text" name="sname" required class="field">
+                Puhelin:<br \>
+                <input type="tel" name="tel" maxlength="10" required class="field">
+                Sähköposti:<br \>
+                <input type="email" name="email" required class="field">
+                Liitä tähän haluamasi linkit. <br \>
+                <input type="url" name="link1" class="field" placeholder="LinkedIn, GitHub, Portfolio tms.">
+                <input type="url" name="link2" class="field" placeholder="LinkedIn, GitHub, Portfolio tms.">
+                <input type="url" name="link3" class="field" placeholder="LinkedIn, GitHub, Portfolio tms.">
+                CV: lataa tiedosto <br \>
+                <input type="file" name="cv">
+                <br \> <br \>
+                Hakemuskirje: <br \>
+                <textarea name="coverletter" class="area mini2" required
+                    placeholder="Kerro itsestäsi ja miksi olisit sopiva tehtävään..."></textarea>
+                <br \>
+                <input type="submit" class="apply font3" value="LÄHETÄ HAKEMUS">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
